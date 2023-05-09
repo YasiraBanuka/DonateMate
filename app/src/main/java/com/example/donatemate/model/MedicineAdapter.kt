@@ -8,7 +8,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.donatemate.R
-import com.google.firebase.database.*
+import com.example.donatemate.model.AvailableData
 
 class MedicineAdapter(
     private val context: Context,
