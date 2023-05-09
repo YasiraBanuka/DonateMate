@@ -159,4 +159,8 @@
     <string name="TotalLbl">Rs.36,000</string>
     <string name="deletecard">Delete Card</string>
     <string name="editcarddetails">Edit Card Details</string>
+    <string name="title">DonateMate</string>
+    <string name="askDonation">Ask Donation</string>
+    <string name="Donation">Donation</string>
+    <string name="memori">Memoriam</string>
 </resources>

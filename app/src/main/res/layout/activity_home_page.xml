@@ -10,9 +10,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/alatsi"
-            android:text="@string/moto"
+            android:text="@string/title"
             android:textAlignment="center"
             android:textColor="@color/bottum_nav_item"
             android:textSize="34sp" />
@@ -32,110 +29,127 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/grey_background"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingLeft="20dp">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:minHeight="100dp"
-                android:padding="10dp"
-                app:srcCompat="@drawable/baseline_handshake_24" />
+            <LinearLayout
+                android:id="@+id/askdonat"
+                android:layout_width="150dp"
+                android:layout_height="189dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/grey_background"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/needmedicine3"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:paddingTop="35dp"
-                android:text="@string/need_medicine"
-                android:textAlignment="viewStart"
-                android:textColor="@color/bottum_nav_item"
-                android:textSize="20sp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="261dp"
+                    android:layout_weight="1"
+                    android:minHeight="100dp"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/baseline_handshake_24" />
+
+                <TextView
+                    android:id="@+id/askdonation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/askDonation"
+                    android:textAlignment="center"
+                    android:textColor="@color/bottum_nav_item"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/payment"
+                android:layout_width="150dp"
+                android:layout_height="189dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/grey_background"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="261dp"
+                    android:layout_weight="1"
+                    android:minHeight="100dp"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/baseline_groups_2_24" />
+
+                <TextView
+                    android:id="@+id/donation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/payment"
+                    android:textAlignment="center"
+                    android:textColor="@color/bottum_nav_item"
+                    android:textSize="20sp" />
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/grey_background"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="20dp">
 
-            <ImageView
-                android:layout_width="87dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:minHeight="100dp"
-                android:padding="10dp"
-                app:srcCompat="@drawable/baseline_groups_2_24" />
+            <LinearLayout
+                android:id="@+id/memoria"
+                android:layout_width="150dp"
+                android:layout_height="189dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/grey_background"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/needmedicine"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:paddingTop="35dp"
-                android:text="@string/availablemedicine"
-                android:textAlignment="viewStart"
-                android:textColor="@color/bottum_nav_item"
-                android:textSize="20sp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="242dp"
+                    android:layout_weight="1"
+                    android:minHeight="100dp"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/baseline_favorite_24" />
+
+                <TextView
+                    android:id="@+id/memoriam"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="20dp"
+                    android:text="@string/memori"
+                    android:textAlignment="center"
+                    android:textColor="@color/bottum_nav_item"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profil"
+                android:layout_width="150dp"
+                android:layout_height="189dp"
+                android:background="@drawable/grey_background"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="249dp"
+                    android:layout_weight="1"
+                    android:minHeight="100dp"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/baseline_person_24" />
+
+                <TextView
+                    android:id="@+id/Profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="20dp"
+                    android:text="@string/profile"
+                    android:textAlignment="center"
+                    android:textColor="@color/bottum_nav_item"
+                    android:textSize="20sp" />
+            </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/grey_background"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="14dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:minHeight="100dp"
-                android:padding="10dp"
-                app:srcCompat="@drawable/baseline_local_pharmacy_24" />
-
-            <TextView
-                android:id="@+id/needmedicined"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:paddingTop="35dp"
-                android:text="@string/pharmacy"
-                android:textAlignment="viewStart"
-                android:textColor="@color/bottum_nav_item"
-                android:textSize="20sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/grey_background"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="2dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:minHeight="100dp"
-                android:padding="10dp"
-                app:srcCompat="@drawable/baseline_history_24" />
-
-            <TextView
-                android:id="@+id/needmedicined8"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:paddingTop="35dp"
-                android:text="@string/history"
-                android:textAlignment="viewStart"
-                android:textColor="@color/bottum_nav_item"
-                android:textSize="20sp" />
-        </LinearLayout>
 
     </LinearLayout>
 
