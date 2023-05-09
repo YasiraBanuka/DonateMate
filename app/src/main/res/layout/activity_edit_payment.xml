@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Edit_Payment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/etopic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/editcarddetails"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/eselecttopis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/selectpmethord"
+                android:textColor="#4A4242"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/eimageView"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                app:srcCompat="@drawable/mastervisa" />
+
+            <RadioGroup
+                android:id="@+id/epayment_method_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/eradio_master_card"
+                    android:layout_width="151dp"
+                    android:layout_height="50dp"
+                    android:text="@string/visacard" />
+
+                <RadioButton
+                    android:id="@+id/eradio_visa_card"
+                    android:layout_width="163dp"
+                    android:layout_height="50dp"
+                    android:text="@string/masetrcard" />
+
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textVigew2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cardnumber"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/enumber"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_rounded"
+                android:ems="10"
+                android:hint="@string/entercardnumber"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColorHint="#504040"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/ename4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/nameoncard"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/ename"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_rounded"
+                android:ems="10"
+                android:hint="@string/entercname"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColorHint="#504040"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/eddate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/edate"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edate"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edit_text_rounded"
+                        android:ems="10"
+                        android:hint="@string/mmyy"
+                        android:inputType="number|date"
+                        android:padding="10dp"
+                        android:textColorHint="#504040"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/ecvcode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/ccvcode"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/ecvc"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edit_text_rounded"
+                        android:ems="10"
+                        android:hint="@string/cvc"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textColorHint="#504040"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RadioButton
+                android:id="@+id/eterms"
+                android:layout_width="276dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/termscondi" />
+
+            <Button
+                android:id="@+id/esubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue"
+                android:text="@string/submit"
+                android:textColor="@color/purple_700" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
