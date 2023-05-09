@@ -3,6 +3,7 @@ package com.example.donatemate
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 
 class Edit_Payment : AppCompatActivity() {
@@ -19,6 +20,8 @@ class Edit_Payment : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_payment)
 
+        val currentUser = FirebaseAuth.getInstance().currentUser
+        val uid = currentUser?.uid
 
         // Get references to EditText fields
         // Initialize the RadioGroup
@@ -50,9 +53,8 @@ class Edit_Payment : AppCompatActivity() {
 
         // Get a reference to your Firebase database
         val database = FirebaseDatabase.getInstance().reference
-
-        // Query the database to retrieve the last row of data
-        database.child("payment").orderByKey().limitToLast(1).get()
+        // Query the database to retrieve the last payment record of the current user
+        database.child("payment").orderByChild("userID").equalTo(uid).limitToLast(1).get()
             .addOnSuccessListener { dataSnapshot ->
 
                 val lastchild = dataSnapshot.children.last() // get the first child node
@@ -85,6 +87,7 @@ class Edit_Payment : AppCompatActivity() {
                     // Update the income record with the new values
                     lastchild.ref.updateChildren(
                         mapOf(
+                            "userID" to uid,
                             "type" to accountType,
                             "cardnumber" to accNumber,
                             "name" to accName,

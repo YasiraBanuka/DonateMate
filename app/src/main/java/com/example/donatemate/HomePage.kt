@@ -10,10 +10,10 @@ class HomePage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_page)
 
-
+    //donation
         val button1: LinearLayout = findViewById(R.id.askdonat)
         button1.setOnClickListener {
-            val intent = Intent(this@HomePage, MainActivity::class.java)
+            val intent = Intent(this@HomePage, AddDonation::class.java)
             startActivity(intent)
         }
 

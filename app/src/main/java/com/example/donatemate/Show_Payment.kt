@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
@@ -22,6 +23,7 @@ class Show_Payment : AppCompatActivity() {
     private lateinit var exDat: TextView
     private lateinit var cvcN: TextView
     private var recordId: String? = null
+
 
 
 
@@ -73,7 +75,7 @@ class Show_Payment : AppCompatActivity() {
             recordReference.removeValue()
                 .addOnSuccessListener {
                     Log.d("DeleteIncome", "Record deleted successfully")
-                    val intent = Intent(this@Show_Payment, MainActivity::class.java)
+                    val intent = Intent(this@Show_Payment, HomePage::class.java)
                     startActivity(intent)
                 }
                 .addOnFailureListener { e ->

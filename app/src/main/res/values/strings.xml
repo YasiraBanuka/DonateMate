@@ -83,13 +83,12 @@
     <string name="pharmacyName">Pharmacy</string>
 
 
-
-<!--    payment-->
+    <!--    payment-->
     <string name="string_addpayment">Add Payment</string>
     <string name="Read_payment">Read payment</string>
     <string name="Editpayment">Edit payment</string>
     <string name="ecarddetails">Enter card Detals</string>
-    <string name="selectpmethord" >Select Payment method</string>
+    <string name="selectpmethord">Select Payment method</string>
     <string name="cardnumber">Card Number</string>
     <string name="entercardnumber">Enter your card number</string>
     <string name="nameoncard">Name On Card</string>
@@ -163,4 +162,16 @@
     <string name="askDonation">Ask Donation</string>
     <string name="Donation">Donation</string>
     <string name="memori">Memoriam</string>
+    <string name="Adddonatin">Add Donation</string>
+    <string name="donanam">Donation Name</string>
+    <string name="readDonation">Read Donation</string>
+    <string name="dname" />
+    <string name="rdname">Name</string>
+    <string name="type">Type</string>
+    <string name="amount">Amount</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="qty">Quantity</string>
+    <string name="decs">Description</string>
+    <string name="Editdonatin">Edit Donation</string>
 </resources>

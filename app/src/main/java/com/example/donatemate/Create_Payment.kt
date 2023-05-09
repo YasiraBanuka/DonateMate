@@ -8,6 +8,7 @@ import android.widget.EditText
 import android.widget.RadioGroup
 import android.widget.Toast
 import com.example.donatemate.model.Payment
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 
 class Create_Payment : AppCompatActivity() {
@@ -16,6 +17,9 @@ class Create_Payment : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_payment)
 
+
+        val currentUser = FirebaseAuth.getInstance().currentUser
+        val uid = currentUser?.uid
         // Initialize Firebase Database reference
         val databaseRef = FirebaseDatabase.getInstance().getReference("payment")
 
@@ -73,7 +77,7 @@ class Create_Payment : AppCompatActivity() {
             }
 
             // Create a new Payment object with the values
-            val payment = Payment(paymentMethod!!, accNumber, Name, ExDate, Cvc)
+            val payment = Payment(uid.toString(), paymentMethod!!, accNumber, Name, ExDate, Cvc)
 
             // Add the Payment object to the Firebase Realtime Database
             databaseRef.push().setValue(payment)
