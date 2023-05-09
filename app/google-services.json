@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1035752106192",
+    "firebase_url": "https://donatemate-c931d-default-rtdb.firebaseio.com",
+    "project_id": "donatemate-c931d",
+    "storage_bucket": "donatemate-c931d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035752106192:android:e4ab263bd6be65dff196d5",
+        "android_client_info": {
+          "package_name": "com.example.donatemate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035752106192-5cijoishb8n4e26k06fj4n3mkneti096.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvYf6wMowCNpWtH_YJbueCEGRfAHh06TU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1035752106192-5cijoishb8n4e26k06fj4n3mkneti096.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
