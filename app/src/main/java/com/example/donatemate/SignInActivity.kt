@@ -24,6 +24,7 @@ class SignInActivity : AppCompatActivity() {
         binding.textView.setOnClickListener {
 
             val intent = Intent(this, SignUpActivity::class.java)
+//            val intent = Intent(this, AddMemoriam::class.java)
 
             startActivity(intent)
         }

@@ -16,7 +16,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginAndSignUp"
         tools:targetApi="31">
-        
+        <activity
+            android:name=".SummaryMemoriam"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".UpdateMemoriam"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AddMemoriam"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".HomeUI"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".Userprofile"
             android:exported="false" />
