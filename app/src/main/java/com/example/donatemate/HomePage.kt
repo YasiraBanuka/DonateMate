@@ -27,7 +27,7 @@ class HomePage : AppCompatActivity() {
         //memori
         val button3: LinearLayout = findViewById(R.id.memoria)
         button3.setOnClickListener {
-            val intent = Intent(this@HomePage, MainActivity::class.java)
+            val intent = Intent(this@HomePage, AddMemoriam::class.java)
             startActivity(intent)
         }
 

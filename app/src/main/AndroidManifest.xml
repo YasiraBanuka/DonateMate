@@ -17,6 +17,15 @@
         android:theme="@style/Theme.LoginAndSignUp"
         tools:targetApi="31">
         <activity
+            android:name=".SummaryMemoriam"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateMemoriam"
+            android:exported="false" />
+        <activity
+            android:name=".AddMemoriam"
+            android:exported="false" />
+        <activity
             android:name=".EditDonation"
             android:exported="false" />
         <activity
