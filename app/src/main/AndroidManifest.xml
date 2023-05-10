@@ -16,7 +16,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginAndSignUp"
         tools:targetApi="31">
-        
+        <activity
+            android:name=".SummaryMemoriam"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateMemoriam"
+            android:exported="false" />
+        <activity
+            android:name=".AddMemoriam"
+            android:exported="false" />
+        <activity
+            android:name=".EditDonation"
+            android:exported="false" />
+        <activity
+            android:name=".ReadDonation"
+            android:exported="false" />
+        <activity
+            android:name=".AddDonation"
+            android:exported="false" />
+        <activity
+            android:name=".Successful_Payment"
+            android:exported="false" />
+        <activity
+            android:name=".Show_Payment"
+            android:exported="false" />
+        <activity
+            android:name=".Edit_Payment"
+            android:exported="false" />
+        <activity
+            android:name=".Create_Payment"
+            android:exported="false" />
         <activity
             android:name=".Userprofile"
             android:exported="false" />
